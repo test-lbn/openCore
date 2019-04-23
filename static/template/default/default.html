@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>[[ERP]]</title>
+
+	<!-- BEGIN META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="erp,digicenter">
+	<meta name="description" content="">
+	<!-- END META -->
+
+	<!-- BEGIN STYLESHEETS -->
+	<link rel="shortcut icon" href="static/images/[[FAVICON]]">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/> -->
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/[[TEMA]]/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/[[TEMA]]/materialadmin.css" />
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/[[TEMA]]/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/[[TEMA]]/material-design-iconic-font.min.css" />
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/[[TEMA]]/libs/typeahead/typeahead.css">
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/[[TEMA]]/libs/toastr/toastr.css">
+	<link type="text/css" rel="stylesheet" href="static/template/default/assets/css/core.css">
+	<!-- END STYLESHEETS -->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/template/default/assets/js/libs/utils/html5shiv.js?1403934957"></script>
+		<script type="text/javascript" src="static/template/default/assets/js/libs/utils/respond.min.js?1403934956"></script>
+		<![endif]-->
+	</head>
+	<body class="menubar-hoverable [[CABECERA]] ">
+	<IMG id='loading-indicator' src='libs/xajax/xajax_core/cargando.gif'>
+		<!-- BEGIN HEADER-->
+		<header id="header" class="[[COLORCABECERA]]">
+			<div class="headerbar">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="headerbar-left">
+					<ul class="header-nav header-nav-options">
+						<li class="header-nav-brand" >
+							<div class="brand-holder">
+								<a href="index.php">
+									<span class="text-xl text-light text-primary">[[ERP]]</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+								<i class="fa fa-bars"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="headerbar-right">
+					<ul class="header-nav header-nav-options">
+						<li>
+							<!-- Search form -->
+							<form class="navbar-search" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" name="headerSearch" id="headerSearch" placeholder="Buscar programa" autocomplete="off">
+								</div>
+								<a class="btn btn-icon-toggle ink-reaction" data-toggle="tooltip" data-original-title="Buscar programa" data-placement="bottom"><i class="fa fa-search"></i></a>
+								<ul class="dropdown-menu animation-expand">
+
+								</ul>
+							</form>
+						</li>
+					</ul><!--end .header-nav-options -->
+					<ul class="header-nav header-nav-profile">
+						<li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+								<div class="profile-img"></div>
+								<span class="profile-info"></span>
+							</a>
+							<ul class="dropdown-menu animation-dock">
+								<li class="dropdown-header">Config</li>
+								<li><a href="#" onclick="cambioContrasena()">Cambiar contrase&ntilde;a</a></li>
+								<li class="divider"></li>
+								<li><a href="#" onclick=logOut()><i class="fa fa-fw fa-power-off text-danger"></i> Salir</a></li>
+							</ul><!--end .dropdown-menu -->
+						</li><!--end .dropdown -->
+					</ul><!--end .header-nav-profile -->
+				</div><!--end #header-navbar-collapse -->
+			</div>
+		</header>
+		<!-- END HEADER-->
+
+		<!-- BEGIN BASE-->
+		<div id="base">
+
+			<!-- BEGIN OFFCANVAS LEFT -->
+			<div class="offcanvas offcanvas-left">
+			</div><!--end .offcanvas-->
+			<!-- END OFFCANVAS LEFT -->
+
+			<!-- BEGIN CONTENT-->
+			<div id="content">
+				<section>
+					<modulo>	
+					</modulo>
+				</section>
+			</div><!--end #content-->
+			<!-- END CONTENT -->
+
+			<!-- BEGIN MENUBAR-->
+			<div id="menubar" class="[[COLORMENU]]">
+				<div class="menubar-fixed-panel">
+					<div>
+						<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<div class="expanded">
+						<a href="index.php">
+							<span class="text-lg text-bold text-primary ">[[ERP]]</span>
+						</a>
+					</div>
+				</div>
+				<div class="menubar-scroll-panel">
+
+					<!-- BEGIN MAIN MENU -->
+					<ul id="main-menu" class="gui-controls">
+					</ul><!--end .main-menu -->
+					<!-- END MAIN MENU -->
+
+					<div class="menubar-foot-panel">
+						<small class="no-linebreak hidden-folded">
+							<span class="opacity-75">[[CREDITOS]]
+							</small>
+						</div>
+					</div><!--end .menubar-scroll-panel-->
+				</div><!--end #menubar-->
+				<!-- END MENUBAR -->
+
+				<!-- BEGIN OFFCANVAS RIGHT -->
+				<div class="offcanvas offcanvas-right">
+					
+				</div><!--end .offcanvas-->
+				<!-- END OFFCANVAS RIGHT -->
+
+			</div><!--end #base-->
+			<!-- END BASE -->
+
+			<!-- BEGIN JAVASCRIPT -->
+			<script src="static/template/default/assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
+			<script src="static/template/default/assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+			<script src="static/template/default/assets/js/libs/bootstrap/bootstrap.min.js"></script>
+			<script src="static/template/default/assets/js/libs/spin.js/spin.min.js"></script>
+			<script src="static/template/default/assets/js/libs/autosize/jquery.autosize.min.js"></script>
+			<script src="static/template/default/assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+			<script src="static/template/default/assets/js/core/source/App.js"></script>
+			<script src="static/template/default/assets/js/core/source/AppNavigation.js"></script>
+			<script src="static/template/default/assets/js/core/source/AppOffcanvas.js"></script>
+			<script src="static/template/default/assets/js/core/source/AppCard.js"></script>
+			<script src="static/template/default/assets/js/core/source/AppForm.js"></script>
+			<script src="static/template/default/assets/js/core/source/AppNavSearch.js"></script>
+			<script src="static/template/default/assets/js/core/source/AppVendor.js"></script>
+			<script src="static/template/default/assets/js/libs/typeahead/bloodhound.min.js"></script>
+			<script src="static/template/default/assets/js/libs/typeahead/typeahead.jquery.min.js"></script>
+			<script src="static/template/default/assets/js/libs/toastr/toastr.js"></script>
+			<script src="static/template/default/assets/js/core/core.js?v20151015"></script>
+
+			<!-- END JAVASCRIPT -->
+
+		</body>
+		<footer></footer>
+		[[PRUEBAS]]
+		</html>

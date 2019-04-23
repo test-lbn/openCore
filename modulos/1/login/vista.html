@@ -1,0 +1,43 @@
+<div class="img-backdrop" style="background-image: url('static/images/[[IMGLOGIN]]'); background-position: top;"></div>
+<div class="spacer"></div>
+<div class="card contain-xs style-transparent">
+	<div class="card-body">
+		<div class="row">
+			<div class="col-sm-12">
+				<br/>
+				<span class="text-xl text-light text-primary">[[ERP]]</span>
+				<small class=" text-primary">[[DESCRIPCION]]</small>
+				<br/><br/>
+				<form class="form floating-label" accept-charset="utf-8" method="post" name='frm' id='frm'>
+					<div class="form-group">
+						<input type="text" class="form-control" id="username" name="username" autocomplete='off'>
+						<label for="username">Usuario</label>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" id="password" name="password">
+						<label for="password">Contrase&ntilde;a</label>
+					</div>
+					<div class="form-group">
+						<select class="form-control" id="db" name="db">
+							<option value='op1'>opcion 1</option>
+							<option value='op2'>opcion 2</option>
+						</select>
+						<label for="db">Base de datos</label>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-6 text-left">
+							<div class="checkbox checkbox-inline checkbox-styled">
+								<label>
+									<input type="checkbox" id='recordarme'> <span>Recordarme</span>
+								</label>
+							</div>
+						</div><!--end .col -->
+						<div class="col-xs-6 text-right">
+							<a class="btn btn-primary btn-raised" id='btn-ingreso-app'>Ingresar</a>
+						</div><!--end .col -->
+					</div><!--end .row -->
+				</form>
+			</div><!--end .col -->
+	</div><!--end .card-body -->
+</div><!--end .card --> 
