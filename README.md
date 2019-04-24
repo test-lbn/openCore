@@ -1,0 +1,2 @@
+# openCore
+pruebas de openCore
