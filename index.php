@@ -3,8 +3,8 @@ session_start();
 
 $plantilla='';
 
-include_once("config.php");//original ERP viejo 
 include_once("core/config.php");
+include_once("config.php");//original ERP viejo 
 include_once(CORE."mainModel.php");
 include_once(CORE."mainBusiness.php");
 include_once(CORE."mainController.php");

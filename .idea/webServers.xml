@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5a3f5b49-ea84-43db-a41d-8ffd93eecc1c" name="OpenCore GoogleCloud" url="http://35.231.186.156/openCore">
+        <fileTransfer host="35.231.186.156" port="211">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="211" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
